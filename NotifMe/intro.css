@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins',sans-serif;
+}
+
+body {
+    background: url("picture/introbg.png");
+    background-position: center;
+    background-size: cover;
+    background-attachment:fixed;
+}
+
+.container{
+    background-color: rgb(1, 126, 204);
+    text-align: center;
+    padding: 40px;
+    position: relative;
+
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.75);
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+    overflow: auto;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgb(0, 225, 255);
+}
+
+.container  button{
+    padding: 15px;
+    font-size: 25px;
+    border-radius: 20px;
+    background-color: cyan;   /* change color nalang */
+    animation: ease-in-out;
+    cursor: pointer;     
+    transition: 0.1s ease-in;
+}
+
+.container button:hover {
+    background-color: black;  /* change color nalang */
+    color: white;             /* pwede delete pag ang bgcolor ay light */
+    transition: 0.2s ease-in;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #051559;
+}
+  
+.navbar li {
+    float: left;
+}
+  
+.navbar li a {
+    display: block;
+    font-size:  20px;
+    color: white;
+    text-align: center;
+    padding: 14px 130px;
+    text-decoration: none;
+    transition: 0.1s ease-in;
+}
+  
+.navbar li a:hover {
+    background-color: cyan;
+    color: black;
+    transition: 0.2s ease-in;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar li a{
+        padding: 14px 15px;
+    }
+}
